@@ -11,7 +11,7 @@ class Post extends Model
       'title',
       'subtitle',
       'description',
-      'authour',
-      'data'  
+      'author',
+      'date'
     ];
 }

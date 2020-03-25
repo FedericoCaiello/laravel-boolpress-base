@@ -18,8 +18,8 @@ class CreatePostsTable extends Migration
             $table->string('title');
             $table->string('subtitle');
             $table->string('description');
-            $table->string('authour');
-            $table->date('data');
+            $table->string('author');
+            $table->date('date');
             $table->timestamps();
         });
     }
