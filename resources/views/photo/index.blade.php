@@ -10,16 +10,20 @@
   <div class="posts">
   @foreach ($photos as $photo)
     <div class="post">
+      <h2>Nome dell'utente della foto {{$photo->user->name}}</h2>
       <ul>
         <li>user_id: {{$photo->user_id}}</li>
         <li><img src="{{$photo->img}}" alt=""></li>
         <li>Name: {{$photo->name}}</li>
+
           {{-- <form action="{{route('posts.destroy', $post->id)}}" method="POST">
             @csrf
             @method('DELETE')
             <button type="submit">DELETE</button>
           </form> --}}
         </li>
+
+        <a href="#">Show</a>
       </ul>
     </div>
   @endforeach
