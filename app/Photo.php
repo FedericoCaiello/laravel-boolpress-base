@@ -12,7 +12,7 @@ class Photo extends Model
     'user_id'
   ];
 
-  public function user()
+  public function users()
   {
     return $this->belongsTo('App\User');
   }
