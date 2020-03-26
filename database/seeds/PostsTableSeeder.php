@@ -16,7 +16,7 @@ class PostsTableSeeder extends Seeder
        $newPost->title = $faker->name;
        $newPost->subtitle = $faker->name;
        $newPost->author = $faker->name;
-      $newPost->description = $faker->name;
+       $newPost->description = $faker->name;
        $newPost->date = $faker->dateTime($max = 'now', $timezone = null);
        $newPost->save();
     }
